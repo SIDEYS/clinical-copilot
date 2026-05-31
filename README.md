@@ -28,15 +28,15 @@ Paste a raw, messy clinical chart → ClinicalCopilot runs **5 specialized AI ag
         ├──────────────────────────────┐
         ▼                              ▼
   MedicationAgent              TimelineAgent
-  (Claude + OpenFDA)           (Claude)
+  (LiteLLM + OpenFDA)          (LiteLLM)
         │
         ▼
     RiskAgent                  ← needs medication output
-  (Claude, clinical thresholds)
+  (LiteLLM, clinical thresholds)
         │
         ▼ (all 4 results collected)
   SynthesisAgent               ← merges everything into SOAP note
-  (Claude)
+  (LiteLLM)
         │
         ▼
   [FastAPI /analyze endpoint]
@@ -49,23 +49,44 @@ Paste a raw, messy clinical chart → ClinicalCopilot runs **5 specialized AI ag
 
 ---
 
+## LLM Layer — LiteLLM (Provider-Agnostic)
+
+All LLM calls go through `shared/llm.py`. Swap models by changing **one env var** — no agent code changes needed.
+
+```bash
+# Default
+LLM_MODEL=anthropic/claude-sonnet-4-20250514
+
+# OpenAI
+LLM_MODEL=openai/gpt-4o
+
+# Groq (fast, free tier)
+LLM_MODEL=groq/llama-3.1-70b-versatile
+
+# Local
+LLM_MODEL=ollama/llama3
+```
+
+---
+
 ## Repo Structure
 
 ```
 clinical-copilot/
 ├── shared/
 │   ├── __init__.py
-│   └── models.py              ← AgentMessage contract — DO NOT CHANGE without team agreement
+│   ├── models.py              ← AgentMessage contract — DO NOT CHANGE without team agreement
+│   └── llm.py                 ← LiteLLM wrapper — single place for LLM config
 ├── agents/
 │   ├── __init__.py
-│   ├── ingestion.py           ← Person 1
-│   ├── medication.py          ← Person 1
-│   ├── timeline.py            ← Person 1
-│   ├── risk.py                ← Person 1
-│   └── synthesis.py           ← Person 3
+│   ├── ingestion.py           ← Person 1 (verify + tune)
+│   ├── medication.py          ← Person 1 (verify + tune)
+│   ├── timeline.py            ← Person 1 (verify + tune)
+│   ├── risk.py                ← Person 1 (verify + tune — most important)
+│   └── synthesis.py           ← Person 3 (verify + tune)
 ├── orchestrator/
 │   ├── __init__.py
-│   └── pipeline.py            ← Person 3
+│   └── pipeline.py            ← Person 3 (verify)
 ├── api/
 │   ├── __init__.py
 │   └── main.py                ← Person 2
@@ -75,7 +96,7 @@ clinical-copilot/
 │   ├── __init__.py
 │   └── tracer.py              ← Person 2
 ├── tests/
-│   └── sample_chart.txt       ← Person 3 (realistic synthetic patient note)
+│   └── sample_chart.txt       ← Person 3 (push immediately)
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt
@@ -141,7 +162,7 @@ class AgentMessage(TypedDict):
 
 | API | Purpose | Auth |
 |---|---|---|
-| Anthropic Claude API (`claude-sonnet-4-20250514`) | All 4 LLM agents | `ANTHROPIC_API_KEY` |
+| LiteLLM (any provider) | All 4 LLM agents — set `LLM_MODEL` in `.env` | Provider key (e.g. `ANTHROPIC_API_KEY`) |
 | OpenFDA Drug Label API | Drug interaction detection | None (free, no key) |
 | W&B Weave | Agent call tracing + audit trail | `WANDB_API_KEY` |
 
@@ -152,11 +173,12 @@ OpenFDA endpoint: `https://api.fda.gov/drug/label.json?search=openfda.generic_na
 ## Environment Setup
 
 ```bash
-git clone https://github.com/YOUR_ORG/clinical-copilot
+git clone https://github.com/SIDEYS/clinical-copilot
 cd clinical-copilot
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
-# Fill in ANTHROPIC_API_KEY and WANDB_API_KEY in .env
+# Fill in ANTHROPIC_API_KEY, WANDB_API_KEY, WANDB_ENTITY in .env
 uvicorn api.main:app --reload --port 8000
 # Open ui/index.html in browser
 ```
@@ -167,7 +189,10 @@ uvicorn api.main:app --reload --port 8000
 ANTHROPIC_API_KEY=your_anthropic_key_here
 WANDB_API_KEY=your_wandb_key_here
 WANDB_PROJECT=clinical-copilot
-WANDB_ENTITY=your_wandb_username
+WANDB_ENTITY=your_wandb_username_here
+
+# Change this one line to swap LLM providers — no code changes needed
+LLM_MODEL=anthropic/claude-sonnet-4-20250514
 ```
 
 ---
@@ -175,7 +200,6 @@ WANDB_ENTITY=your_wandb_username
 ## Running the Pipeline Directly
 
 ```bash
-# Quick test without the API
 python -c "
 from orchestrator.pipeline import run_pipeline
 result = run_pipeline(open('tests/sample_chart.txt').read())
@@ -190,7 +214,7 @@ import json; print(json.dumps(result, indent=2))
 Every agent call is wrapped with a `@weave.op` decorator. The Weave dashboard shows:
 - Input/output for each of the 5 agents
 - Latency per agent
-- Token usage per Claude call
+- Token usage per LLM call
 - Full trace graph showing the parallel fan-out
 
 **Weave Dashboard:** [INSERT URL after setup]
@@ -209,9 +233,9 @@ Every agent call is wrapped with a `@weave.op` decorator. The Weave dashboard sh
 
 | Criterion | How We Satisfy It |
 |---|---|
-| Agent Orchestration | 5 agents, parallel asyncio fan-out, typed message contract |
+| Agent Orchestration | 5 agents, parallel asyncio fan-out, typed AgentMessage contract |
 | Utility | Real clinical pain point — 2+ hrs/day saved on documentation |
-| Technical Execution | FastAPI, typed contracts, OpenFDA, error handling |
+| Technical Execution | FastAPI, LiteLLM (modular), typed contracts, OpenFDA, error handling |
 | Creativity | Parallel specialist agents + full auditability for clinical AI |
 | Sponsor Tool Usage | W&B Weave traces every agent call — also targeting Best Use of Weave ($1k) |
 
@@ -221,9 +245,9 @@ Every agent call is wrapped with a `@weave.op` decorator. The Weave dashboard sh
 
 | Role | Responsibility |
 |---|---|
-| Person 1 — ML Engineer | IngestionAgent, MedicationAgent, TimelineAgent, RiskAgent |
-| Person 2 — Infra Engineer | shared/models.py, FastAPI, Weave integration, UI |
-| Person 3 — Pipeline Lead | SynthesisAgent, Orchestrator, sample data, demo + submission |
+| Person 1 — ML Engineer | Validate + tune IngestionAgent, MedicationAgent, TimelineAgent, RiskAgent |
+| Person 2 — Infra Engineer | shared/models.py, shared/llm.py, FastAPI, Weave integration, UI |
+| Person 3 — Pipeline Lead | Validate SynthesisAgent + Orchestrator, sample data, demo + submission |
 
 ---
 
@@ -231,11 +255,11 @@ Every agent call is wrapped with a `@weave.op` decorator. The Weave dashboard sh
 
 | Time | Milestone |
 |---|---|
-| 0:00–0:20 | Person 2 creates repo + shared/models.py + pushes. Unblocks everyone. |
-| 0:20–1:30 | All 3 build in parallel |
-| 1:30–1:45 | Integration checkpoint 1 — wire ingestion → medication |
-| 1:45–3:00 | Full pipeline working end-to-end |
-| 3:00–3:30 | Weave integration + UI polish |
+| 0:00–0:20 | Person 3 pushes sample_chart.txt. Unblocks Person 1. |
+| 0:20–1:30 | Person 1 tunes agents, Person 2 sets up W&B, Person 3 validates pipeline |
+| 1:30–1:45 | Integration checkpoint 1 — full pipeline runs end-to-end |
+| 1:45–3:00 | API + UI working, Weave traces showing |
+| 3:00–3:30 | Weave dashboard polish, UI polish |
 | 3:30–4:00 | Demo prep + rehearsal |
 | 4:00–4:20 | Record 2-min screen demo |
 | 4:20–4:30 | Submit on AGI House platform |
