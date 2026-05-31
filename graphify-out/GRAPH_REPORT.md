@@ -1,16 +1,16 @@
 # Graph Report - clinicalcopilot  (2026-05-31)
 
 ## Corpus Check
-- 34 files · ~11,613 words
+- 34 files · ~12,317 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 214 nodes · 263 edges · 21 communities (18 shown, 3 thin omitted)
+- 215 nodes · 264 edges · 21 communities (18 shown, 3 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9d1d6850`
+- Built from commit: `7a9c8074`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -90,7 +90,7 @@ Nodes (14): _add_flag(), Clinical threshold constants (K>6.0 HIGH, BNP>1000 HIGH
 
 ### Community 6 - "LiteLLM Config"
 Cohesion: 0.09
-Nodes (19): ACCEPTED_TYPES, FileUploadProps, UploadState, FlagBadgeProps, SEVERITY_DOT, SEVERITY_STYLES, ReportPanelProps, ResultsDashboardProps (+11 more)
+Nodes (19): ACCEPTED_TYPES, FileEntry, FileUploadProps, FlagBadgeProps, SEVERITY_DOT, SEVERITY_STYLES, ReportPanelProps, ResultsDashboardProps (+11 more)
 
 ### Community 7 - "Environment Setup"
 Cohesion: 0.19
@@ -121,7 +121,7 @@ Cohesion: 0.67
 Nodes (3): Diagnosis: Anterior wall STEMI — cath lab activation, Patient: Robert Chen — anterior STEMI, Critical lab: Troponin I 4.8 rising to 9.2 ng/mL
 
 ## Knowledge Gaps
-- **79 isolated node(s):** `InputAgent: normalizes raw, messy clinical text into structured chart format. Th`, `Extract text from an uploaded PDF, DOCX, MD, or TXT file.`, `Run InputAgent to normalize raw text into structured clinical chart format.`, `File text extraction. Pure Python, no LLM. Uses pdfplumber for PDFs — extracts t`, `Uses pdfplumber for spatial-aware extraction — captures text that sits     besid` (+74 more)
+- **79 isolated node(s):** `Report generation from pipeline output. Doctor report: template-based markdown (`, `ACCEPTED_TYPES`, `FileEntry`, `FileUploadProps`, `ReportPanelProps` (+74 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -129,14 +129,14 @@ Nodes (3): Diagnosis: Anterior wall STEMI — cath lab activation, Patient: Robe
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `run()` connect `Agent Implementations` to `FastAPI + Contract Layer`, `Shared Models`, `Clinical Test Cases`?**
-  _High betweenness centrality (0.385) - this node is a cross-community bridge._
+  _High betweenness centrality (0.381) - this node is a cross-community bridge._
 - **Why does `ClinicalCopilot 🏥` connect `README Architecture` to `Task Documentation`, `Agent Implementations`?**
-  _High betweenness centrality (0.318) - this node is a cross-community bridge._
+  _High betweenness centrality (0.315) - this node is a cross-community bridge._
 - **Why does `ClinicalCopilot — Person 3 Task Sheet` connect `Task Documentation` to `Demo + Submission`, `README Architecture`?**
-  _High betweenness centrality (0.203) - this node is a cross-community bridge._
+  _High betweenness centrality (0.201) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `run_pipeline()` (e.g. with `analyze()` and `AgentMessage`) actually correct?**
   _`run_pipeline()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `InputAgent: normalizes raw, messy clinical text into structured chart format. Th`, `Extract text from an uploaded PDF, DOCX, MD, or TXT file.`, `Run InputAgent to normalize raw text into structured clinical chart format.` to the rest of the system?**
+- **What connects `Report generation from pipeline output. Doctor report: template-based markdown (`, `ACCEPTED_TYPES`, `FileEntry` to the rest of the system?**
   _79 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Task Documentation` be split into smaller, more focused modules?**
   _Cohesion score 0.06 - nodes in this community are weakly interconnected._

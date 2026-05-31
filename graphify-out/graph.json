@@ -52,222 +52,6 @@
   },
   "nodes": [
     {
-      "label": "input.py",
-      "file_type": "code",
-      "source_file": "agents/input.py",
-      "source_location": "L1",
-      "id": "agents_input_py",
-      "community": 16,
-      "norm_label": "input.py"
-    },
-    {
-      "label": "run()",
-      "file_type": "code",
-      "source_file": "agents/input.py",
-      "source_location": "L55",
-      "id": "agents_input_run",
-      "community": 16,
-      "norm_label": "run()"
-    },
-    {
-      "label": "InputAgent: normalizes raw, messy clinical text into structured chart format. Th",
-      "file_type": "rationale",
-      "source_file": "agents/input.py",
-      "source_location": "L1",
-      "id": "agents_input_rationale_1",
-      "community": 16,
-      "norm_label": "inputagent: normalizes raw, messy clinical text into structured chart format. th"
-    },
-    {
-      "label": "main.py",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L1",
-      "id": "api_main_py",
-      "community": 7,
-      "norm_label": "main.py"
-    },
-    {
-      "label": "NormalizeRequest",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L32",
-      "id": "api_main_normalizerequest",
-      "community": 7,
-      "norm_label": "normalizerequest"
-    },
-    {
-      "label": "BaseModel",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "id": "basemodel",
-      "community": 7,
-      "norm_label": "basemodel"
-    },
-    {
-      "label": "NormalizeResponse",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L37",
-      "id": "api_main_normalizeresponse",
-      "community": 7,
-      "norm_label": "normalizeresponse"
-    },
-    {
-      "label": "AnalyzeRequest",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L43",
-      "id": "api_main_analyzerequest",
-      "community": 7,
-      "norm_label": "analyzerequest"
-    },
-    {
-      "label": "AnalyzeResponse",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L48",
-      "id": "api_main_analyzeresponse",
-      "community": 7,
-      "norm_label": "analyzeresponse"
-    },
-    {
-      "label": "upload_file()",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L63",
-      "id": "api_main_upload_file",
-      "community": 8,
-      "norm_label": "upload_file()"
-    },
-    {
-      "label": "normalize()",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L95",
-      "id": "api_main_normalize",
-      "community": 7,
-      "norm_label": "normalize()"
-    },
-    {
-      "label": "analyze()",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L112",
-      "id": "api_main_analyze",
-      "community": 7,
-      "norm_label": "analyze()"
-    },
-    {
-      "label": "health()",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L147",
-      "id": "api_main_health",
-      "community": 7,
-      "norm_label": "health()"
-    },
-    {
-      "label": "serve_ui()",
-      "file_type": "code",
-      "source_file": "api/main.py",
-      "source_location": "L157",
-      "id": "api_main_serve_ui",
-      "community": 7,
-      "norm_label": "serve_ui()"
-    },
-    {
-      "label": "Extract text from an uploaded PDF, DOCX, MD, or TXT file.",
-      "file_type": "rationale",
-      "source_file": "api/main.py",
-      "source_location": "L64",
-      "id": "api_main_rationale_64",
-      "community": 8,
-      "norm_label": "extract text from an uploaded pdf, docx, md, or txt file."
-    },
-    {
-      "label": "Run InputAgent to normalize raw text into structured clinical chart format.",
-      "file_type": "rationale",
-      "source_file": "api/main.py",
-      "source_location": "L96",
-      "id": "api_main_rationale_96",
-      "community": 7,
-      "norm_label": "run inputagent to normalize raw text into structured clinical chart format."
-    },
-    {
-      "label": "parser.py",
-      "file_type": "code",
-      "source_file": "shared/parser.py",
-      "source_location": "L1",
-      "id": "shared_parser_py",
-      "community": 8,
-      "norm_label": "parser.py"
-    },
-    {
-      "label": "extract_text()",
-      "file_type": "code",
-      "source_file": "shared/parser.py",
-      "source_location": "L10",
-      "id": "shared_parser_extract_text",
-      "community": 8,
-      "norm_label": "extract_text()"
-    },
-    {
-      "label": "_extract_pdf()",
-      "file_type": "code",
-      "source_file": "shared/parser.py",
-      "source_location": "L23",
-      "id": "shared_parser_extract_pdf",
-      "community": 8,
-      "norm_label": "_extract_pdf()"
-    },
-    {
-      "label": "_extract_pdf_fallback()",
-      "file_type": "code",
-      "source_file": "shared/parser.py",
-      "source_location": "L80",
-      "id": "shared_parser_extract_pdf_fallback",
-      "community": 8,
-      "norm_label": "_extract_pdf_fallback()"
-    },
-    {
-      "label": "_extract_docx()",
-      "file_type": "code",
-      "source_file": "shared/parser.py",
-      "source_location": "L96",
-      "id": "shared_parser_extract_docx",
-      "community": 8,
-      "norm_label": "_extract_docx()"
-    },
-    {
-      "label": "File text extraction. Pure Python, no LLM. Uses pdfplumber for PDFs \u2014 extracts t",
-      "file_type": "rationale",
-      "source_file": "shared/parser.py",
-      "source_location": "L1",
-      "id": "shared_parser_rationale_1",
-      "community": 8,
-      "norm_label": "file text extraction. pure python, no llm. uses pdfplumber for pdfs \u2014 extracts t"
-    },
-    {
-      "label": "Uses pdfplumber for spatial-aware extraction \u2014 captures text that sits     besid",
-      "file_type": "rationale",
-      "source_file": "shared/parser.py",
-      "source_location": "L24",
-      "id": "shared_parser_rationale_24",
-      "community": 8,
-      "norm_label": "uses pdfplumber for spatial-aware extraction \u2014 captures text that sits     besid"
-    },
-    {
-      "label": "Extracts paragraphs and table cells. Captions on images in DOCX files     are st",
-      "file_type": "rationale",
-      "source_file": "shared/parser.py",
-      "source_location": "L97",
-      "id": "shared_parser_rationale_97",
-      "community": 8,
-      "norm_label": "extracts paragraphs and table cells. captions on images in docx files     are st"
-    },
-    {
       "label": "reports.py",
       "file_type": "code",
       "source_file": "shared/reports.py",
@@ -280,7 +64,7 @@
       "label": "generate_doctor_report()",
       "file_type": "code",
       "source_file": "shared/reports.py",
-      "source_location": "L34",
+      "source_location": "L44",
       "id": "shared_reports_generate_doctor_report",
       "community": 7,
       "norm_label": "generate_doctor_report()"
@@ -289,7 +73,7 @@
       "label": "generate_patient_report()",
       "file_type": "code",
       "source_file": "shared/reports.py",
-      "source_location": "L123",
+      "source_location": "L133",
       "id": "shared_reports_generate_patient_report",
       "community": 7,
       "norm_label": "generate_patient_report()"
@@ -302,15 +86,6 @@
       "id": "shared_reports_rationale_1",
       "community": 7,
       "norm_label": "report generation from pipeline output. doctor report: template-based markdown ("
-    },
-    {
-      "label": "postcss.config.js",
-      "file_type": "code",
-      "source_file": "ui/postcss.config.js",
-      "source_location": "L1",
-      "id": "ui_postcss_config_js",
-      "community": 17,
-      "norm_label": "postcss.config.js"
     },
     {
       "label": "App.tsx",
@@ -331,51 +106,6 @@
       "norm_label": "app()"
     },
     {
-      "label": "api.ts",
-      "file_type": "code",
-      "source_file": "ui/src/api.ts",
-      "source_location": "L1",
-      "id": "ui_src_api_ts",
-      "community": 6,
-      "norm_label": "api.ts"
-    },
-    {
-      "label": "handleResponse()",
-      "file_type": "code",
-      "source_file": "ui/src/api.ts",
-      "source_location": "L3",
-      "id": "src_api_handleresponse",
-      "community": 6,
-      "norm_label": "handleresponse()"
-    },
-    {
-      "label": "uploadFile()",
-      "file_type": "code",
-      "source_file": "ui/src/api.ts",
-      "source_location": "L11",
-      "id": "src_api_uploadfile",
-      "community": 6,
-      "norm_label": "uploadfile()"
-    },
-    {
-      "label": "normalizeText()",
-      "file_type": "code",
-      "source_file": "ui/src/api.ts",
-      "source_location": "L20",
-      "id": "src_api_normalizetext",
-      "community": 6,
-      "norm_label": "normalizetext()"
-    },
-    {
-      "label": "analyzeChart()",
-      "file_type": "code",
-      "source_file": "ui/src/api.ts",
-      "source_location": "L32",
-      "id": "src_api_analyzechart",
-      "community": 6,
-      "norm_label": "analyzechart()"
-    },
-    {
       "label": "FileUpload.tsx",
       "file_type": "code",
       "source_file": "ui/src/components/FileUpload.tsx",
@@ -388,82 +118,46 @@
       "label": "ACCEPTED_TYPES",
       "file_type": "code",
       "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L6",
+      "source_location": "L8",
       "id": "components_fileupload_accepted_types",
       "community": 6,
       "norm_label": "accepted_types"
     },
     {
+      "label": "formatBytes()",
+      "file_type": "code",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L16",
+      "id": "components_fileupload_formatbytes",
+      "community": 6,
+      "norm_label": "formatbytes()"
+    },
+    {
+      "label": "FileEntry",
+      "file_type": "code",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L22",
+      "id": "components_fileupload_fileentry",
+      "community": 6,
+      "norm_label": "fileentry"
+    },
+    {
       "label": "FileUploadProps",
       "file_type": "code",
       "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L14",
+      "source_location": "L30",
       "id": "components_fileupload_fileuploadprops",
       "community": 6,
       "norm_label": "fileuploadprops"
     },
     {
-      "label": "UploadState",
-      "file_type": "code",
-      "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L20",
-      "id": "components_fileupload_uploadstate",
-      "community": 6,
-      "norm_label": "uploadstate"
-    },
-    {
       "label": "FileUpload()",
       "file_type": "code",
       "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L27",
+      "source_location": "L36",
       "id": "components_fileupload_fileupload",
       "community": 6,
       "norm_label": "fileupload()"
-    },
-    {
-      "label": "FlagBadge.tsx",
-      "file_type": "code",
-      "source_file": "ui/src/components/FlagBadge.tsx",
-      "source_location": "L1",
-      "id": "ui_src_components_flagbadge_tsx",
-      "community": 6,
-      "norm_label": "flagbadge.tsx"
-    },
-    {
-      "label": "FlagBadgeProps",
-      "file_type": "code",
-      "source_file": "ui/src/components/FlagBadge.tsx",
-      "source_location": "L3",
-      "id": "components_flagbadge_flagbadgeprops",
-      "community": 6,
-      "norm_label": "flagbadgeprops"
-    },
-    {
-      "label": "SEVERITY_STYLES",
-      "file_type": "code",
-      "source_file": "ui/src/components/FlagBadge.tsx",
-      "source_location": "L8",
-      "id": "components_flagbadge_severity_styles",
-      "community": 6,
-      "norm_label": "severity_styles"
-    },
-    {
-      "label": "SEVERITY_DOT",
-      "file_type": "code",
-      "source_file": "ui/src/components/FlagBadge.tsx",
-      "source_location": "L14",
-      "id": "components_flagbadge_severity_dot",
-      "community": 6,
-      "norm_label": "severity_dot"
-    },
-    {
-      "label": "FlagBadge()",
-      "file_type": "code",
-      "source_file": "ui/src/components/FlagBadge.tsx",
-      "source_location": "L20",
-      "id": "components_flagbadge_flagbadge",
-      "community": 6,
-      "norm_label": "flagbadge()"
     },
     {
       "label": "ReportPanel.tsx",
@@ -478,7 +172,7 @@
       "label": "ReportPanelProps",
       "file_type": "code",
       "source_file": "ui/src/components/ReportPanel.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "components_reportpanel_reportpanelprops",
       "community": 6,
       "norm_label": "reportpanelprops"
@@ -487,7 +181,7 @@
       "label": "ReportPanel()",
       "file_type": "code",
       "source_file": "ui/src/components/ReportPanel.tsx",
-      "source_location": "L13",
+      "source_location": "L44",
       "id": "components_reportpanel_reportpanel",
       "community": 6,
       "norm_label": "reportpanel()"
@@ -520,103 +214,418 @@
       "norm_label": "resultsdashboard()"
     },
     {
+      "label": "input.py",
+      "file_type": "code",
+      "source_file": "agents/input.py",
+      "source_location": "L1",
+      "community": 16,
+      "norm_label": "input.py",
+      "id": "agents_input_py"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "agents/input.py",
+      "source_location": "L55",
+      "community": 16,
+      "norm_label": "run()",
+      "id": "agents_input_run"
+    },
+    {
+      "label": "InputAgent: normalizes raw, messy clinical text into structured chart format. Th",
+      "file_type": "rationale",
+      "source_file": "agents/input.py",
+      "source_location": "L1",
+      "community": 16,
+      "norm_label": "inputagent: normalizes raw, messy clinical text into structured chart format. th",
+      "id": "agents_input_rationale_1"
+    },
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "main.py",
+      "id": "api_main_py"
+    },
+    {
+      "label": "NormalizeRequest",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L32",
+      "community": 7,
+      "norm_label": "normalizerequest",
+      "id": "api_main_normalizerequest"
+    },
+    {
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "community": 7,
+      "norm_label": "basemodel",
+      "id": "basemodel"
+    },
+    {
+      "label": "NormalizeResponse",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L37",
+      "community": 7,
+      "norm_label": "normalizeresponse",
+      "id": "api_main_normalizeresponse"
+    },
+    {
+      "label": "AnalyzeRequest",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L43",
+      "community": 7,
+      "norm_label": "analyzerequest",
+      "id": "api_main_analyzerequest"
+    },
+    {
+      "label": "AnalyzeResponse",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L48",
+      "community": 7,
+      "norm_label": "analyzeresponse",
+      "id": "api_main_analyzeresponse"
+    },
+    {
+      "label": "upload_file()",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L63",
+      "community": 8,
+      "norm_label": "upload_file()",
+      "id": "api_main_upload_file"
+    },
+    {
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L95",
+      "community": 7,
+      "norm_label": "normalize()",
+      "id": "api_main_normalize"
+    },
+    {
+      "label": "analyze()",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L112",
+      "community": 7,
+      "norm_label": "analyze()",
+      "id": "api_main_analyze"
+    },
+    {
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L147",
+      "community": 7,
+      "norm_label": "health()",
+      "id": "api_main_health"
+    },
+    {
+      "label": "serve_ui()",
+      "file_type": "code",
+      "source_file": "api/main.py",
+      "source_location": "L157",
+      "community": 7,
+      "norm_label": "serve_ui()",
+      "id": "api_main_serve_ui"
+    },
+    {
+      "label": "Extract text from an uploaded PDF, DOCX, MD, or TXT file.",
+      "file_type": "rationale",
+      "source_file": "api/main.py",
+      "source_location": "L64",
+      "community": 8,
+      "norm_label": "extract text from an uploaded pdf, docx, md, or txt file.",
+      "id": "api_main_rationale_64"
+    },
+    {
+      "label": "Run InputAgent to normalize raw text into structured clinical chart format.",
+      "file_type": "rationale",
+      "source_file": "api/main.py",
+      "source_location": "L96",
+      "community": 7,
+      "norm_label": "run inputagent to normalize raw text into structured clinical chart format.",
+      "id": "api_main_rationale_96"
+    },
+    {
+      "label": "parser.py",
+      "file_type": "code",
+      "source_file": "shared/parser.py",
+      "source_location": "L1",
+      "community": 8,
+      "norm_label": "parser.py",
+      "id": "shared_parser_py"
+    },
+    {
+      "label": "extract_text()",
+      "file_type": "code",
+      "source_file": "shared/parser.py",
+      "source_location": "L10",
+      "community": 8,
+      "norm_label": "extract_text()",
+      "id": "shared_parser_extract_text"
+    },
+    {
+      "label": "_extract_pdf()",
+      "file_type": "code",
+      "source_file": "shared/parser.py",
+      "source_location": "L23",
+      "community": 8,
+      "norm_label": "_extract_pdf()",
+      "id": "shared_parser_extract_pdf"
+    },
+    {
+      "label": "_extract_pdf_fallback()",
+      "file_type": "code",
+      "source_file": "shared/parser.py",
+      "source_location": "L80",
+      "community": 8,
+      "norm_label": "_extract_pdf_fallback()",
+      "id": "shared_parser_extract_pdf_fallback"
+    },
+    {
+      "label": "_extract_docx()",
+      "file_type": "code",
+      "source_file": "shared/parser.py",
+      "source_location": "L96",
+      "community": 8,
+      "norm_label": "_extract_docx()",
+      "id": "shared_parser_extract_docx"
+    },
+    {
+      "label": "File text extraction. Pure Python, no LLM. Uses pdfplumber for PDFs \u2014 extracts t",
+      "file_type": "rationale",
+      "source_file": "shared/parser.py",
+      "source_location": "L1",
+      "community": 8,
+      "norm_label": "file text extraction. pure python, no llm. uses pdfplumber for pdfs \u2014 extracts t",
+      "id": "shared_parser_rationale_1"
+    },
+    {
+      "label": "Uses pdfplumber for spatial-aware extraction \u2014 captures text that sits     besid",
+      "file_type": "rationale",
+      "source_file": "shared/parser.py",
+      "source_location": "L24",
+      "community": 8,
+      "norm_label": "uses pdfplumber for spatial-aware extraction \u2014 captures text that sits     besid",
+      "id": "shared_parser_rationale_24"
+    },
+    {
+      "label": "Extracts paragraphs and table cells. Captions on images in DOCX files     are st",
+      "file_type": "rationale",
+      "source_file": "shared/parser.py",
+      "source_location": "L97",
+      "community": 8,
+      "norm_label": "extracts paragraphs and table cells. captions on images in docx files     are st",
+      "id": "shared_parser_rationale_97"
+    },
+    {
+      "label": "postcss.config.js",
+      "file_type": "code",
+      "source_file": "ui/postcss.config.js",
+      "source_location": "L1",
+      "community": 17,
+      "norm_label": "postcss.config.js",
+      "id": "ui_postcss_config_js"
+    },
+    {
+      "label": "api.ts",
+      "file_type": "code",
+      "source_file": "ui/src/api.ts",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "api.ts",
+      "id": "ui_src_api_ts"
+    },
+    {
+      "label": "handleResponse()",
+      "file_type": "code",
+      "source_file": "ui/src/api.ts",
+      "source_location": "L3",
+      "community": 6,
+      "norm_label": "handleresponse()",
+      "id": "src_api_handleresponse"
+    },
+    {
+      "label": "uploadFile()",
+      "file_type": "code",
+      "source_file": "ui/src/api.ts",
+      "source_location": "L11",
+      "community": 6,
+      "norm_label": "uploadfile()",
+      "id": "src_api_uploadfile"
+    },
+    {
+      "label": "normalizeText()",
+      "file_type": "code",
+      "source_file": "ui/src/api.ts",
+      "source_location": "L20",
+      "community": 6,
+      "norm_label": "normalizetext()",
+      "id": "src_api_normalizetext"
+    },
+    {
+      "label": "analyzeChart()",
+      "file_type": "code",
+      "source_file": "ui/src/api.ts",
+      "source_location": "L32",
+      "community": 6,
+      "norm_label": "analyzechart()",
+      "id": "src_api_analyzechart"
+    },
+    {
+      "label": "FlagBadge.tsx",
+      "file_type": "code",
+      "source_file": "ui/src/components/FlagBadge.tsx",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "flagbadge.tsx",
+      "id": "ui_src_components_flagbadge_tsx"
+    },
+    {
+      "label": "FlagBadgeProps",
+      "file_type": "code",
+      "source_file": "ui/src/components/FlagBadge.tsx",
+      "source_location": "L3",
+      "community": 6,
+      "norm_label": "flagbadgeprops",
+      "id": "components_flagbadge_flagbadgeprops"
+    },
+    {
+      "label": "SEVERITY_STYLES",
+      "file_type": "code",
+      "source_file": "ui/src/components/FlagBadge.tsx",
+      "source_location": "L8",
+      "community": 6,
+      "norm_label": "severity_styles",
+      "id": "components_flagbadge_severity_styles"
+    },
+    {
+      "label": "SEVERITY_DOT",
+      "file_type": "code",
+      "source_file": "ui/src/components/FlagBadge.tsx",
+      "source_location": "L14",
+      "community": 6,
+      "norm_label": "severity_dot",
+      "id": "components_flagbadge_severity_dot"
+    },
+    {
+      "label": "FlagBadge()",
+      "file_type": "code",
+      "source_file": "ui/src/components/FlagBadge.tsx",
+      "source_location": "L20",
+      "community": 6,
+      "norm_label": "flagbadge()",
+      "id": "components_flagbadge_flagbadge"
+    },
+    {
       "label": "main.tsx",
       "file_type": "code",
       "source_file": "ui/src/main.tsx",
       "source_location": "L1",
-      "id": "ui_src_main_tsx",
       "community": 6,
-      "norm_label": "main.tsx"
+      "norm_label": "main.tsx",
+      "id": "ui_src_main_tsx"
     },
     {
       "label": "types.ts",
       "file_type": "code",
       "source_file": "ui/src/types.ts",
       "source_location": "L1",
-      "id": "ui_src_types_ts",
       "community": 6,
-      "norm_label": "types.ts"
+      "norm_label": "types.ts",
+      "id": "ui_src_types_ts"
     },
     {
       "label": "RiskFlag",
       "file_type": "code",
       "source_file": "ui/src/types.ts",
       "source_location": "L1",
-      "id": "src_types_riskflag",
       "community": 6,
-      "norm_label": "riskflag"
+      "norm_label": "riskflag",
+      "id": "src_types_riskflag"
     },
     {
       "label": "Medication",
       "file_type": "code",
       "source_file": "ui/src/types.ts",
       "source_location": "L7",
-      "id": "src_types_medication",
       "community": 6,
-      "norm_label": "medication"
+      "norm_label": "medication",
+      "id": "src_types_medication"
     },
     {
       "label": "Interaction",
       "file_type": "code",
       "source_file": "ui/src/types.ts",
       "source_location": "L13",
-      "id": "src_types_interaction",
       "community": 6,
-      "norm_label": "interaction"
+      "norm_label": "interaction",
+      "id": "src_types_interaction"
     },
     {
       "label": "TimelineEvent",
       "file_type": "code",
       "source_file": "ui/src/types.ts",
       "source_location": "L18",
-      "id": "src_types_timelineevent",
       "community": 6,
-      "norm_label": "timelineevent"
+      "norm_label": "timelineevent",
+      "id": "src_types_timelineevent"
     },
     {
       "label": "SoapNote",
       "file_type": "code",
       "source_file": "ui/src/types.ts",
       "source_location": "L24",
-      "id": "src_types_soapnote",
       "community": 6,
-      "norm_label": "soapnote"
+      "norm_label": "soapnote",
+      "id": "src_types_soapnote"
     },
     {
       "label": "AnalysisResult",
       "file_type": "code",
       "source_file": "ui/src/types.ts",
       "source_location": "L31",
-      "id": "src_types_analysisresult",
       "community": 6,
-      "norm_label": "analysisresult"
+      "norm_label": "analysisresult",
+      "id": "src_types_analysisresult"
     },
     {
       "label": "AppStep",
       "file_type": "code",
       "source_file": "ui/src/types.ts",
       "source_location": "L45",
-      "id": "src_types_appstep",
       "community": 6,
-      "norm_label": "appstep"
+      "norm_label": "appstep",
+      "id": "src_types_appstep"
     },
     {
       "label": "tailwind.config.js",
       "file_type": "code",
       "source_file": "ui/tailwind.config.js",
       "source_location": "L1",
-      "id": "ui_tailwind_config_js",
       "community": 19,
-      "norm_label": "tailwind.config.js"
+      "norm_label": "tailwind.config.js",
+      "id": "ui_tailwind_config_js"
     },
     {
       "label": "vite.config.ts",
       "file_type": "code",
       "source_file": "ui/vite.config.ts",
       "source_location": "L1",
-      "id": "ui_vite_config_ts",
       "community": 20,
-      "norm_label": "vite.config.ts"
+      "norm_label": "vite.config.ts",
+      "id": "ui_vite_config_ts"
     },
     {
       "label": "tracer.py",
@@ -2171,12 +2180,329 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "shared/reports.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "shared_reports_py",
+      "target": "shared_reports_generate_doctor_report"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/reports.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "shared_reports_py",
+      "target": "shared_reports_generate_patient_report"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "shared/reports.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "shared_reports_rationale_1",
+      "target": "shared_reports_py"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "api/main.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "api_main_analyze",
+      "target": "shared_reports_generate_doctor_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "api/main.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "api_main_analyze",
+      "target": "shared_reports_generate_patient_report"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_app_tsx",
+      "target": "ui_src_components_fileupload_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_app_tsx",
+      "target": "ui_src_components_resultsdashboard_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_app_tsx",
+      "target": "src_api_analyzechart"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_app_tsx",
+      "target": "src_types_analysisresult"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_app_tsx",
+      "target": "src_types_appstep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/App.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_app_tsx",
+      "target": "src_app_app"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_app_tsx",
+      "target": "ui_src_api_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_app_tsx",
+      "target": "ui_src_types_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_main_tsx",
+      "target": "ui_src_app_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_fileupload_tsx",
+      "target": "src_api_uploadfile"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_fileupload_tsx",
+      "target": "src_api_normalizetext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_fileupload_tsx",
+      "target": "components_fileupload_accepted_types"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "ui_src_components_fileupload_tsx",
+      "target": "components_fileupload_formatbytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "ui_src_components_fileupload_tsx",
+      "target": "components_fileupload_fileentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_fileupload_tsx",
+      "target": "components_fileupload_fileuploadprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_fileupload_tsx",
+      "target": "components_fileupload_fileupload"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/FileUpload.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_fileupload_tsx",
+      "target": "ui_src_api_ts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/ReportPanel.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_reportpanel_tsx",
+      "target": "components_reportpanel_reportpanelprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/ReportPanel.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_reportpanel_tsx",
+      "target": "components_reportpanel_reportpanel"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/ResultsDashboard.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_resultsdashboard_tsx",
+      "target": "ui_src_components_reportpanel_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/ResultsDashboard.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_resultsdashboard_tsx",
+      "target": "src_types_analysisresult"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/ResultsDashboard.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_resultsdashboard_tsx",
+      "target": "components_resultsdashboard_resultsdashboardprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/ResultsDashboard.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_resultsdashboard_tsx",
+      "target": "components_resultsdashboard_resultsdashboard"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/ResultsDashboard.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_resultsdashboard_tsx",
+      "target": "ui_src_components_flagbadge_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui/src/components/ResultsDashboard.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_src_components_resultsdashboard_tsx",
+      "target": "ui_src_types_ts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "agents/input.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_input_py",
-      "target": "agents_input_run",
-      "confidence_score": 1.0
+      "target": "agents_input_run"
     },
     {
       "relation": "rationale_for",
@@ -2184,9 +2510,9 @@
       "source_file": "agents/input.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_input_rationale_1",
-      "target": "agents_input_py",
-      "confidence_score": 1.0
+      "target": "agents_input_py"
     },
     {
       "relation": "contains",
@@ -2194,9 +2520,9 @@
       "source_file": "api/main.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_py",
-      "target": "api_main_normalizerequest",
-      "confidence_score": 1.0
+      "target": "api_main_normalizerequest"
     },
     {
       "relation": "contains",
@@ -2204,9 +2530,9 @@
       "source_file": "api/main.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_py",
-      "target": "api_main_normalizeresponse",
-      "confidence_score": 1.0
+      "target": "api_main_normalizeresponse"
     },
     {
       "relation": "contains",
@@ -2234,9 +2560,9 @@
       "source_file": "api/main.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_py",
-      "target": "api_main_upload_file",
-      "confidence_score": 1.0
+      "target": "api_main_upload_file"
     },
     {
       "relation": "contains",
@@ -2244,9 +2570,9 @@
       "source_file": "api/main.py",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_py",
-      "target": "api_main_normalize",
-      "confidence_score": 1.0
+      "target": "api_main_normalize"
     },
     {
       "relation": "contains",
@@ -2284,9 +2610,9 @@
       "source_file": "api/main.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_normalizerequest",
-      "target": "basemodel",
-      "confidence_score": 1.0
+      "target": "basemodel"
     },
     {
       "relation": "inherits",
@@ -2294,9 +2620,9 @@
       "source_file": "api/main.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_normalizeresponse",
-      "target": "basemodel",
-      "confidence_score": 1.0
+      "target": "basemodel"
     },
     {
       "relation": "inherits",
@@ -2325,9 +2651,9 @@
       "source_file": "api/main.py",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_normalize",
-      "target": "api_main_normalizeresponse",
-      "confidence_score": 1.0
+      "target": "api_main_normalizeresponse"
     },
     {
       "relation": "calls",
@@ -2356,9 +2682,9 @@
       "source_file": "api/main.py",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_rationale_64",
-      "target": "api_main_upload_file",
-      "confidence_score": 1.0
+      "target": "api_main_upload_file"
     },
     {
       "relation": "calls",
@@ -2377,31 +2703,9 @@
       "source_file": "api/main.py",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_main_rationale_96",
-      "target": "api_main_normalize",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "api/main.py",
-      "source_location": "L118",
-      "weight": 1.0,
-      "source": "api_main_analyze",
-      "target": "shared_reports_generate_doctor_report"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "api/main.py",
-      "source_location": "L119",
-      "weight": 1.0,
-      "source": "api_main_analyze",
-      "target": "shared_reports_generate_patient_report"
+      "target": "api_main_normalize"
     },
     {
       "relation": "calls",
@@ -2420,9 +2724,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_py",
-      "target": "shared_parser_extract_text",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_text"
     },
     {
       "relation": "contains",
@@ -2430,9 +2734,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_py",
-      "target": "shared_parser_extract_pdf",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_pdf"
     },
     {
       "relation": "contains",
@@ -2440,9 +2744,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_py",
-      "target": "shared_parser_extract_pdf_fallback",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_pdf_fallback"
     },
     {
       "relation": "contains",
@@ -2450,9 +2754,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_py",
-      "target": "shared_parser_extract_docx",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_docx"
     },
     {
       "relation": "rationale_for",
@@ -2460,9 +2764,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_rationale_1",
-      "target": "shared_parser_py",
-      "confidence_score": 1.0
+      "target": "shared_parser_py"
     },
     {
       "relation": "calls",
@@ -2471,9 +2775,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_extract_pdf",
-      "target": "shared_parser_extract_text",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_text"
     },
     {
       "relation": "calls",
@@ -2482,9 +2786,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_extract_text",
-      "target": "shared_parser_extract_docx",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_docx"
     },
     {
       "relation": "calls",
@@ -2493,9 +2797,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_extract_pdf_fallback",
-      "target": "shared_parser_extract_text",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_text"
     },
     {
       "relation": "calls",
@@ -2504,9 +2808,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_extract_pdf",
-      "target": "shared_parser_extract_pdf_fallback",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_pdf_fallback"
     },
     {
       "relation": "rationale_for",
@@ -2514,9 +2818,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_rationale_24",
-      "target": "shared_parser_extract_pdf",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_pdf"
     },
     {
       "relation": "rationale_for",
@@ -2524,137 +2828,9 @@
       "source_file": "shared/parser.py",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "shared_parser_rationale_97",
-      "target": "shared_parser_extract_docx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "shared/reports.py",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "shared_reports_py",
-      "target": "shared_reports_generate_doctor_report",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "shared/reports.py",
-      "source_location": "L123",
-      "weight": 1.0,
-      "source": "shared_reports_py",
-      "target": "shared_reports_generate_patient_report",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "shared/reports.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "shared_reports_rationale_1",
-      "target": "shared_reports_py",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/App.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "ui_src_app_tsx",
-      "target": "ui_src_components_fileupload_tsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/App.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "ui_src_app_tsx",
-      "target": "ui_src_components_resultsdashboard_tsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "ui_src_app_tsx",
-      "target": "ui_src_api_ts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "ui_src_app_tsx",
-      "target": "src_api_analyzechart",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/App.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "ui_src_app_tsx",
-      "target": "ui_src_types_ts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/App.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "ui_src_app_tsx",
-      "target": "src_types_analysisresult",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/App.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "ui_src_app_tsx",
-      "target": "src_types_appstep",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/App.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "ui_src_app_tsx",
-      "target": "src_app_app",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/main.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "ui_src_main_tsx",
-      "target": "ui_src_app_tsx",
-      "confidence_score": 1.0
+      "target": "shared_parser_extract_docx"
     },
     {
       "relation": "imports_from",
@@ -2663,9 +2839,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_api_ts",
-      "target": "ui_src_types_ts",
-      "confidence_score": 1.0
+      "target": "ui_src_types_ts"
     },
     {
       "relation": "imports",
@@ -2674,9 +2850,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_api_ts",
-      "target": "src_types_analysisresult",
-      "confidence_score": 1.0
+      "target": "src_types_analysisresult"
     },
     {
       "relation": "contains",
@@ -2684,9 +2860,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_api_ts",
-      "target": "src_api_handleresponse",
-      "confidence_score": 1.0
+      "target": "src_api_handleresponse"
     },
     {
       "relation": "contains",
@@ -2694,9 +2870,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_api_ts",
-      "target": "src_api_uploadfile",
-      "confidence_score": 1.0
+      "target": "src_api_uploadfile"
     },
     {
       "relation": "contains",
@@ -2704,9 +2880,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_api_ts",
-      "target": "src_api_normalizetext",
-      "confidence_score": 1.0
+      "target": "src_api_normalizetext"
     },
     {
       "relation": "contains",
@@ -2714,20 +2890,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_api_ts",
-      "target": "src_api_analyzechart",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "ui_src_components_fileupload_tsx",
-      "target": "ui_src_api_ts",
-      "confidence_score": 1.0
+      "target": "src_api_analyzechart"
     },
     {
       "relation": "calls",
@@ -2736,9 +2901,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_api_uploadfile",
-      "target": "src_api_handleresponse",
-      "confidence_score": 1.0
+      "target": "src_api_handleresponse"
     },
     {
       "relation": "calls",
@@ -2747,9 +2912,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_api_normalizetext",
-      "target": "src_api_handleresponse",
-      "confidence_score": 1.0
+      "target": "src_api_handleresponse"
     },
     {
       "relation": "calls",
@@ -2758,71 +2923,9 @@
       "source_file": "ui/src/api.ts",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_api_analyzechart",
-      "target": "src_api_handleresponse",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "ui_src_components_fileupload_tsx",
-      "target": "src_api_uploadfile",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "ui_src_components_fileupload_tsx",
-      "target": "src_api_normalizetext",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "ui_src_components_fileupload_tsx",
-      "target": "components_fileupload_accepted_types",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "ui_src_components_fileupload_tsx",
-      "target": "components_fileupload_fileuploadprops",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "ui_src_components_fileupload_tsx",
-      "target": "components_fileupload_uploadstate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/FileUpload.tsx",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "ui_src_components_fileupload_tsx",
-      "target": "components_fileupload_fileupload",
-      "confidence_score": 1.0
+      "target": "src_api_handleresponse"
     },
     {
       "relation": "imports_from",
@@ -2831,9 +2934,9 @@
       "source_file": "ui/src/components/FlagBadge.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_components_flagbadge_tsx",
-      "target": "ui_src_types_ts",
-      "confidence_score": 1.0
+      "target": "ui_src_types_ts"
     },
     {
       "relation": "imports",
@@ -2842,9 +2945,9 @@
       "source_file": "ui/src/components/FlagBadge.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_components_flagbadge_tsx",
-      "target": "src_types_riskflag",
-      "confidence_score": 1.0
+      "target": "src_types_riskflag"
     },
     {
       "relation": "contains",
@@ -2852,9 +2955,9 @@
       "source_file": "ui/src/components/FlagBadge.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_components_flagbadge_tsx",
-      "target": "components_flagbadge_flagbadgeprops",
-      "confidence_score": 1.0
+      "target": "components_flagbadge_flagbadgeprops"
     },
     {
       "relation": "contains",
@@ -2862,9 +2965,9 @@
       "source_file": "ui/src/components/FlagBadge.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_components_flagbadge_tsx",
-      "target": "components_flagbadge_severity_styles",
-      "confidence_score": 1.0
+      "target": "components_flagbadge_severity_styles"
     },
     {
       "relation": "contains",
@@ -2872,9 +2975,9 @@
       "source_file": "ui/src/components/FlagBadge.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_components_flagbadge_tsx",
-      "target": "components_flagbadge_severity_dot",
-      "confidence_score": 1.0
+      "target": "components_flagbadge_severity_dot"
     },
     {
       "relation": "contains",
@@ -2882,93 +2985,9 @@
       "source_file": "ui/src/components/FlagBadge.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_components_flagbadge_tsx",
-      "target": "components_flagbadge_flagbadge",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/ResultsDashboard.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "ui_src_components_resultsdashboard_tsx",
-      "target": "ui_src_components_flagbadge_tsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/ReportPanel.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "ui_src_components_reportpanel_tsx",
-      "target": "components_reportpanel_reportpanelprops",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/ReportPanel.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "ui_src_components_reportpanel_tsx",
-      "target": "components_reportpanel_reportpanel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/ResultsDashboard.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "ui_src_components_resultsdashboard_tsx",
-      "target": "ui_src_components_reportpanel_tsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/ResultsDashboard.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "ui_src_components_resultsdashboard_tsx",
-      "target": "ui_src_types_ts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/ResultsDashboard.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "ui_src_components_resultsdashboard_tsx",
-      "target": "src_types_analysisresult",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/ResultsDashboard.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "ui_src_components_resultsdashboard_tsx",
-      "target": "components_resultsdashboard_resultsdashboardprops",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ui/src/components/ResultsDashboard.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "ui_src_components_resultsdashboard_tsx",
-      "target": "components_resultsdashboard_resultsdashboard",
-      "confidence_score": 1.0
+      "target": "components_flagbadge_flagbadge"
     },
     {
       "relation": "contains",
@@ -2976,9 +2995,9 @@
       "source_file": "ui/src/types.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_types_ts",
-      "target": "src_types_riskflag",
-      "confidence_score": 1.0
+      "target": "src_types_riskflag"
     },
     {
       "relation": "contains",
@@ -2986,9 +3005,9 @@
       "source_file": "ui/src/types.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_types_ts",
-      "target": "src_types_medication",
-      "confidence_score": 1.0
+      "target": "src_types_medication"
     },
     {
       "relation": "contains",
@@ -2996,9 +3015,9 @@
       "source_file": "ui/src/types.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_types_ts",
-      "target": "src_types_interaction",
-      "confidence_score": 1.0
+      "target": "src_types_interaction"
     },
     {
       "relation": "contains",
@@ -3006,9 +3025,9 @@
       "source_file": "ui/src/types.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_types_ts",
-      "target": "src_types_timelineevent",
-      "confidence_score": 1.0
+      "target": "src_types_timelineevent"
     },
     {
       "relation": "contains",
@@ -3016,9 +3035,9 @@
       "source_file": "ui/src/types.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_types_ts",
-      "target": "src_types_soapnote",
-      "confidence_score": 1.0
+      "target": "src_types_soapnote"
     },
     {
       "relation": "contains",
@@ -3026,9 +3045,9 @@
       "source_file": "ui/src/types.ts",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_types_ts",
-      "target": "src_types_analysisresult",
-      "confidence_score": 1.0
+      "target": "src_types_analysisresult"
     },
     {
       "relation": "contains",
@@ -3036,9 +3055,9 @@
       "source_file": "ui/src/types.ts",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_src_types_ts",
-      "target": "src_types_appstep",
-      "confidence_score": 1.0
+      "target": "src_types_appstep"
     },
     {
       "relation": "contains",
@@ -4901,5 +4920,5 @@
       "source_file": "tests/run_all.py"
     }
   ],
-  "built_at_commit": "9d1d685054b0e42030ec9c210ff05bacb9ecdef5"
+  "built_at_commit": "7a9c80746a7f8210f6d8e53786dc51ae53b2912e"
 }
