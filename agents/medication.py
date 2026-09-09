@@ -63,10 +63,15 @@ def _merge_medications(primary: list, fallback: list) -> list:
     return merged
 
 
-def extract_medications(text: str) -> list:
+def extract_medications(text: str, llm_config: dict | None = None) -> list:
     fallback = _fallback_extract_medications(text)
+    llm_config = llm_config or {}
     try:
-        raw = chat(EXTRACT_PROMPT.format(text=text[:2000]))
+        raw = chat(
+            EXTRACT_PROMPT.format(text=text[:2000]),
+            model=llm_config.get("model"),
+            api_key=llm_config.get("api_key"),
+        )
         raw = raw.replace("```json", "").replace("```", "").strip()
         extracted = json.loads(raw).get("medications", [])
     except Exception:
@@ -84,9 +89,12 @@ def check_interactions(meds: list) -> list:
         })
     for m in meds:
         try:
-            drug = m["name"].lower().replace(" ", "+")
-            url = f"https://api.fda.gov/drug/label.json?search=openfda.generic_name:{drug}&limit=1"
-            r = requests.get(url, timeout=4)
+            drug_name = m["name"].lower()
+            r = requests.get(
+                "https://api.fda.gov/drug/label.json",
+                params={"search": f"openfda.generic_name:{drug_name}", "limit": 1},
+                timeout=4,
+            )
             if r.status_code == 200:
                 results = r.json().get("results", [])
                 if results:
@@ -98,9 +106,9 @@ def check_interactions(meds: list) -> list:
     return interactions
 
 
-def run(ingestion_msg: dict, trace_id: str) -> AgentMessage:
+def run(ingestion_msg: dict, trace_id: str, llm_config: dict | None = None) -> AgentMessage:
     text = ingestion_msg["payload"]["raw_text"]
-    meds = extract_medications(text)
+    meds = extract_medications(text, llm_config)
     interactions = check_interactions(meds)
     return AgentMessage(
         agent="medication",
